@@ -74,9 +74,9 @@ let decimalTo n base =
 
 (* baseToBase : int list -> int -> int -> int list *)
 let baseToBase digits base1 base2 =
-  let decimal = toDecimal digits base
+  let decimal = toDecimal digits base1
   in
-  decimalTo decimal base2 
+  decimalTo decimal base2
 
 (* The connection between toDecimal and decimalTo:
 
